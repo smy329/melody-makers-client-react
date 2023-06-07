@@ -7,12 +7,14 @@ import { AuthContext } from '../../providers/AuthProvider';
 //tooltip
 import { Tooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
+import useAdmin from '../../hooks/useAdmin';
 
 const Navbar = () => {
   //const { user, logOut } = useContext(AuthContext);
   const { user, logOut } = useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   console.log(isMenuOpen);
+  const [isAdmin] = useAdmin();
 
   const handleLogout = () => {
     logOut()
@@ -63,7 +65,10 @@ const Navbar = () => {
                 <Link className="text-base font-medium p-2 md:p-5 text-black hover:text-primary tracking-wide ">
                   User Profile
                 </Link>
-                <Link className="text-base font-medium p-2 md:p-5 text-black hover:text-primary tracking-wide ">
+                <Link
+                  className="text-base font-medium p-2 md:p-5 text-black hover:text-primary tracking-wide"
+                  to={isAdmin ? '/admin/dashboard' : '/user/dashboard'}
+                >
                   Dashboard
                 </Link>
                 <Link
@@ -73,13 +78,13 @@ const Navbar = () => {
                   Logout
                 </Link>
                 <span className="flex items-center p-2 md:p-5">
-                  {user.photoURL ? (
+                  {user?.photoURL ? (
                     <img
-                      src={user.photoURL}
+                      src={user?.photoURL}
                       alt=""
                       className=" h-8 w-8 rounded-full"
                       data-tooltip-id="profile-name"
-                      data-tooltip-content={user.displayName}
+                      data-tooltip-content={user?.displayName}
                     />
                   ) : (
                     <HiUserCircle className="h-8 w-8 " />
