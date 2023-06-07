@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-hot-toast';
+import SocialLogin from '../components/SocialLogin';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -23,9 +25,13 @@ const Login = () => {
       .then((result) => {
         const loggedUser = result.user;
         console.log(loggedUser);
+        toast('Logging in...');
         navigate(from, { replace: true });
       })
-      .catch((error) => console.log(error.message));
+      .catch((error) => {
+        toast(error.message);
+        console.log(error.message);
+      });
   };
   return (
     <div className="min-h-screen py-6 flex flex-col justify-center sm:py-12">
@@ -94,9 +100,18 @@ const Login = () => {
                   </div>
                   <div className="relative">
                     <button className="btn-theme">Login Now</button>
+                    <p className="text-sm font-light text-gray-500">
+                      Don’t have an account yet? &nbsp;
+                      <a href="/signup" className="font-medium text-gray-600 hover:underline">
+                        Sign up
+                      </a>
+                    </p>
                   </div>
                 </div>
               </form>
+              <div>
+                <SocialLogin />
+              </div>
             </div>
           </div>
         </div>

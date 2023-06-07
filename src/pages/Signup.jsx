@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
+import { toast } from 'react-hot-toast';
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -37,9 +38,13 @@ const Signup = () => {
                 console.log('after storing database', data);
                 if (data.insertedId) {
                   reset();
+                  toast('Sign up Successful');
                 }
               })
-              .catch((error) => error.message());
+              .catch((error) => {
+                toast(error.message());
+                console.log(error.message());
+              });
 
             navigate('/');
           })
