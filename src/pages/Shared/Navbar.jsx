@@ -26,20 +26,16 @@ const Navbar = () => {
       });
   };
 
-  const handleAddToy = () => {
-    console.log('add toy');
-  };
-
-  const handleMyToys = () => {
-    console.log('My Toys');
-  };
   return (
     <div className="relative mb-5 container mx-auto">
       <Tooltip id="profile-name" />
       <div className="flex justify-between">
-        <div className="navbar-start">
-          <img src={logo} alt="disney palace logo" className="h-16 w-16" />
-          <h1 className="font-extrabold text-3xl">Palace</h1>
+        <div className="navbar-start flex items-center">
+          <img src={logo} alt="logo" className="h-16 w-16" />
+          <div>
+            <p className="font-bold text-xl">Melody</p>
+            <p className="font-bold text-xl">Makers</p>
+          </div>
         </div>
         <div className="md:navbar-center hidden md:flex flex-col md:flex-row ">
           <div className="flex flex-col md:flex-row text-right md:text-center items-center">

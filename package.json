@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.29.12",
+    "aos": "^2.3.4",
     "axios": "^1.4.0",
     "date-fns": "^2.30.0",
     "firebase": "^9.22.0",
@@ -21,7 +22,8 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.2",
     "react-spinners": "^0.13.8",
-    "react-tooltip": "^5.13.1"
+    "react-tooltip": "^5.13.1",
+    "swiper": "^9.3.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
