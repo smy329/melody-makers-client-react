@@ -1,10 +1,12 @@
 import React from 'react';
 import Slider from './Slider';
+import PopularClasses from './PopularClasses';
 
 const Home = () => {
   return (
-    <div>
+    <div className="space-y-20">
       <Slider />
+      <PopularClasses />
     </div>
   );
 };

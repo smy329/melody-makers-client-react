@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Piano",
+    "image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "instructorName": "Mark Turner",
+    "desc": "It is a musical instrument played using a keyboard",
+    "instructorEmail:": "john.doe@example.com",
+    "enrolledStudents": 27,
+    "totalSeats": 50,
+    "price": 69,
+    "status": "approved",
+    "feedback": ""
+  },
+  {
+    "name": "Guitar",
+    "desc": "The guitar is classified as a string instrument",
+    "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "instructorName": "Robert Johnson",
+    "instructorEmail:": "emily.smith@gmail.com",
+    "enrolledStudents": 37,
+    "totalSeats": 50,
+    "price": 150,
+    "status": "approved",
+    "feedback": ""
+  },
+  {
+    "name": "Voice",
+    "desc": "It is a type of music performed by one or more singers",
+    "image": "https://images.unsplash.com/photo-1488376986648-2512dfc6f736?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=876&q=80",
+    "instructorName": "Rachel Thompson",
+    "instructorEmail:": "david.wilson@yahoo.com",
+    "enrolledStudents": 30,
+    "totalSeats": 50,
+    "price": 155,
+    "status": "approved",
+    "feedback": ""
+  },
+  {
+    "name": "Drums",
+    "desc": "Can play by striking with the hand or two sticks",
+    "image": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "instructorName": "Jessica Adams",
+    "instructorEmail:": "sarah.johnson@hotmail.com",
+    "enrolledStudents": 35,
+    "totalSeats": 50,
+    "price": 170,
+    "status": "approved",
+    "feedback": ""
+  },
+  {
+    "name": "Violin",
+    "desc": "The violin has four strings tuned in perfect fifths",
+    "image": "https://images.unsplash.com/photo-1566913485233-a9b2afe13757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
+    "instructorName": "Mark Turner",
+    "instructorEmail:": "john.doe@example.com",
+    "enrolledStudents": 23,
+    "totalSeats": 50,
+    "price": 95,
+    "status": "approved",
+    "feedback": ""
+  },
+  {
+    "name": "Cello",
+    "desc": "The cello is used as a solo musical instrument",
+    "image": "https://images.unsplash.com/photo-1603584915335-d612257071b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "instructorName": "Sarah Johnson",
+    "instructorEmail:": "jennifer.davis@gmail.com",
+    "enrolledStudents": 13,
+    "totalSeats": 50,
+    "price": 75,
+    "status": "approved",
+    "feedback": ""
+  },
+  {
+    "name": "Double Bass",
+    "desc": "The lowest-pitched bowed string instrument",
+    "image": "https://images.unsplash.com/photo-1576477210278-8f46836b1b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "instructorName": "Jessica Adams",
+    "instructorEmail:": "robert.jackson@yahoo.com",
+    "enrolledStudents": 23,
+    "totalSeats": 50,
+    "price": 89,
+    "status": "approved",
+    "feedback": ""
+  },
+  {
+    "name": "Saxophone",
+    "desc": "The saxophone is a woodwind instrument",
+    "image": "https://images.unsplash.com/photo-1630492096725-d256050e7993?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "instructorName": "Michael Davis",
+    "instructorEmail:": "laura.thompson@hotmail.com",
+    "enrolledStudents": 15,
+    "totalSeats": 50,
+    "price": 99,
+    "status": "approved",
+    "feedback": ""
+  }
+]

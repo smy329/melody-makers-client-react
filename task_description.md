@@ -32,20 +32,7 @@
 
    <br/>
 
-   **Error for Registration system:**
-   On the Registration page, display errors when:
-
-   The password
-
-   - is less than 6 characters
-   - don't have a capital letter
-   - don't have a special character
-
-   <br/>
-
 5. **Homepage:**
-
-   - **Popular Classes Section -** Show relevant pictures related to the classes or activities. Have the top 6 classes based on the number of students.
 
    - **Popular Instructors Section -** Show relevant pictures related to the classes or activities. Show the top 6 instructors based on the number of students in their Class. However, selecting top instructors based on the number of students is optional, but you must show 6 instructors.
 

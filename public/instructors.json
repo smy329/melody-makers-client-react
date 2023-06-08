@@ -1,0 +1,44 @@
+[
+  {
+    "image": "",
+    "name": "Mark Turner",
+    "email": "john.doe@example.com",
+    "classesTaken": 2,
+    "classesName": ["Piano", "Violin"]
+  },
+  {
+    "image": "",
+    "name": "Robert Johnson",
+    "email": "emily.smith@gmail.com",
+    "classesTaken": 1,
+    "classesName": ["Guitar"]
+  },
+  {
+    "image": "",
+    "name": "Rachel Thompson",
+    "email": "david.wilson@yahoo.com",
+    "classesTaken": 1,
+    "classesName": ["Voice"]
+  },
+  {
+    "image": "",
+    "name": "Jessica Adams",
+    "email": "sarah.johnson@hotmail.com",
+    "classesTaken": 2,
+    "classesName": ["Drums", "Double Bass"]
+  },
+  {
+    "image": "",
+    "name": "Sarah Johnson",
+    "email": "jennifer.davis@gmail.com",
+    "classesTaken": 1,
+    "classesName": ["Cello"]
+  },
+  {
+    "image": "",
+    "name": "Michael Davis",
+    "email": "laura.thompson@hotmail.com",
+    "classesTaken": 1,
+    "classesName": ["Saxophone"]
+  }
+]
