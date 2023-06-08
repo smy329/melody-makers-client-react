@@ -23,7 +23,7 @@ const DashboardLayout = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-80 h-full bg-blue-600 text-base-content">
+          <ul className="menu p-4 w-60 h-full bg-blue-600 text-base-content">
             {/* Sidebar content here */}
             {isAdmin && (
               <>
@@ -43,7 +43,7 @@ const DashboardLayout = () => {
             {isInstructor ? (
               <>
                 <li>
-                  <NavLink to="/user/dashboard">
+                  <NavLink to="/users/dashboard">
                     <FaHome /> Instructor Dashboard
                   </NavLink>
                 </li>
@@ -51,17 +51,17 @@ const DashboardLayout = () => {
             ) : (
               <>
                 <li>
-                  <NavLink to="/user/dashboard">
+                  <NavLink to="/users/dashboard">
                     <FaHome /> Student Dashboard
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/user/my-selected-classes">
+                  <NavLink to="/users/my-selected-classes">
                     <FaHome /> My Selected Classes
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/user/my-enrolled-classes">
+                  <NavLink to="/users/my-enrolled-classes">
                     <FaHome /> My Enrolled Classes
                   </NavLink>
                 </li>

@@ -2,21 +2,43 @@ import React, { useContext } from 'react';
 import { toast } from 'react-hot-toast';
 import { AuthContext } from '../providers/AuthProvider';
 import useAdmin from '../hooks/useAdmin';
-import useRole from '../hooks/useInstructor';
+import useInstructor from '../hooks/useInstructor';
+import useAxiosSecure from '../hooks/useAxiosSecure';
+import { useQuery } from '@tanstack/react-query';
+import { useNavigate } from 'react-router-dom';
 
 const ClassesCard = ({ singleClass }) => {
-  const { user } = useContext(AuthContext);
+  const { user, loading } = useContext(AuthContext);
   const [isAdmin] = useAdmin();
-  const [isInstructor] = useRole();
-  const { image, name, price, instructorName, totalSeats, enrolledStudents } = singleClass;
+  const [isInstructor] = useInstructor();
+  const { image, name, price, instructorName, totalSeats, enrolledStudents, _id } = singleClass;
   const availableSeats = totalSeats - enrolledStudents;
-  const handleSelectCourse = (name, user) => {
+  const [axiosSecure] = useAxiosSecure();
+  const navigate = useNavigate();
+
+  const { data: selectedFromDB = [], refetch } = useQuery({
+    queryKey: ['selectedFromDB', user?.email],
+    enabled: !loading,
+    queryFn: async () => {
+      const res = await axiosSecure.get(`/users/selected-classes/${user?.email}`);
+      return res.data;
+    },
+  });
+
+  const handleSelectCourse = (user, _id) => {
     if (!user) {
       return toast('Please log in before selecting this course');
     }
-    toast(name);
+
+    const selectClassData = { email: user.email, classId: _id };
+    axiosSecure.patch('/users/select-classes', selectClassData).then((res) => {
+      console.log(res.data);
+      refetch();
+    });
+    navigate('/users/my-selected-classes');
   };
-  console.log(isInstructor);
+
+  const isClassSelected = selectedFromDB.includes(_id);
   return (
     <div
       className={`${
@@ -38,12 +60,12 @@ const ClassesCard = ({ singleClass }) => {
 
         <button
           className={`btn-theme w-full font-medium text-white rounded-md px-2 py-2 mt-3 disabled:bg-gray-500`}
-          disabled={isAdmin || isInstructor || availableSeats === 0}
+          disabled={isAdmin || isInstructor || availableSeats === 0 || isClassSelected}
           onClick={() => {
-            handleSelectCourse(name, user);
+            handleSelectCourse(user, _id);
           }}
         >
-          Select This Course
+          {isClassSelected ? 'Already Selected' : 'Select This Course'}
         </button>
       </div>
     </div>

@@ -63,7 +63,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   className="text-base font-medium p-2 md:p-5 text-black hover:text-primary tracking-wide"
-                  to={isAdmin ? '/admin/dashboard' : '/user/dashboard'}
+                  to={isAdmin ? '/admin/dashboard' : '/users/dashboard'}
                 >
                   Dashboard
                 </Link>

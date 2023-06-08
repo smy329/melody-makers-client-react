@@ -41,7 +41,7 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: '/user',
+    path: '/users',
     element: (
       <PrivateRoute>
         <DashboardLayout />
