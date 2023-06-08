@@ -15,7 +15,7 @@ const PopularInstructors = () => {
       <div>
         <h1 className="text-7xl font-bold text-center mb-10">Popular Instructors </h1>
       </div>
-      <Marquee pauseOnHover={true}>
+      <Marquee pauseOnHover={true} direction="right">
         {instructors.map((singleInstructor) => (
           <PopularInstructorsCard key={singleInstructor._id} singleInstructor={singleInstructor} />
         ))}

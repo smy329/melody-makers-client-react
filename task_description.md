@@ -34,23 +34,12 @@
 
 5. **Homepage:**
 
-   - **Popular Instructors Section -** Show relevant pictures related to the classes or activities. Show the top 6 instructors based on the number of students in their Class. However, selecting top instructors based on the number of students is optional, but you must show 6 instructors.
-
    - **Extra Section -** Add one relevant sections. Make it attractive :heart_eyes:. Try to use animation effects.
-
-<br/>
 
 6. **Instructors Page:**
    Display all the instructors. Each Instructor will be:
 
-   - Image
-   - Name
-   - Email
-   - (optional) Number of Classes taken by the Instructor.
-   - (optional) Name of the Classes taken by the Instructor.
    - (optional) `See Classes` button to show classes by this Instructor. This will take you to a new link
-     <br/>
-     <br/>
 
 7. **Classes page:**
    Show all approved classes on this page. Each Class will have the following:
