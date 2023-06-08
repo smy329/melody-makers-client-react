@@ -15,13 +15,26 @@ const MySelectedClasses = () => {
       return res.data;
     },
   });
-  console.log(selectedFromDB);
-  //const { image, price, name, instructorName, availableSeats } = selectedFromDB[];
+
+  const handleDelete = (user, _id) => {
+    const selectClassData = { email: user.email, classId: _id };
+    //console.log(selectClassData);
+    axiosSecure.patch('/users/selected-class', selectClassData).then((res) => {
+      console.log(res.data);
+    });
+    refetch();
+  };
   return (
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
       {selectedFromDB.map((singleClassFromDB) => {
         refetch();
-        return <MySelectedClassesCard key={singleClassFromDB._id} singleClassFromDB={singleClassFromDB} />;
+        return (
+          <MySelectedClassesCard
+            key={singleClassFromDB._id}
+            singleClassFromDB={singleClassFromDB}
+            handleDelete={handleDelete}
+          />
+        );
       })}
     </div>
   );
