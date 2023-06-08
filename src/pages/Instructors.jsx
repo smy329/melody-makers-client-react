@@ -18,7 +18,7 @@ const Instructors = () => {
           <div className="p-4 ">
             <div className="flex items-center justify-between">
               <h1 className="text-gray-600 font-medium">{singleInstructor?.name}</h1>
-              <span className=" uppercase text-xs bg-blue-50 p-0.5 border-blue-500 border rounded text-green-700 font-medium">
+              <span className=" uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium">
                 {singleInstructor?.email}
               </span>
             </div>

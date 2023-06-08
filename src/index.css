@@ -6,10 +6,10 @@
   @apply bg-blue-500 w-full font-medium text-white rounded-md px-2 py-2;
 }
 
-.drawer-side a.active {
-  @apply font-medium tracking-wide text-blue-700 bg-white duration-200;
-}
-
 .drawer-side a {
   @apply font-medium tracking-wide text-white duration-200 focus:bg-transparent;
+}
+
+.drawer-side a.active {
+  @apply font-medium tracking-wide text-blue-700 bg-white duration-200;
 }
