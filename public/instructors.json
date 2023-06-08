@@ -1,44 +1,38 @@
 [
   {
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1465821185615-20b3c2fbf41b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=998&q=80",
     "name": "Mark Turner",
     "email": "john.doe@example.com",
-    "classesTaken": 2,
     "classesName": ["Piano", "Violin"]
   },
   {
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     "name": "Robert Johnson",
     "email": "emily.smith@gmail.com",
-    "classesTaken": 1,
     "classesName": ["Guitar"]
   },
   {
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1519874179391-3ebc752241dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     "name": "Rachel Thompson",
     "email": "david.wilson@yahoo.com",
-    "classesTaken": 1,
     "classesName": ["Voice"]
   },
   {
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1543443258-92b04ad5ec6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     "name": "Jessica Adams",
     "email": "sarah.johnson@hotmail.com",
-    "classesTaken": 2,
     "classesName": ["Drums", "Double Bass"]
   },
   {
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1538992212037-196a87ac8c61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80",
     "name": "Sarah Johnson",
     "email": "jennifer.davis@gmail.com",
-    "classesTaken": 1,
     "classesName": ["Cello"]
   },
   {
-    "image": "",
+    "image": "https://images.unsplash.com/photo-1613168461287-6e529b708c76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     "name": "Michael Davis",
     "email": "laura.thompson@hotmail.com",
-    "classesTaken": 1,
     "classesName": ["Saxophone"]
   }
 ]
