@@ -41,8 +41,7 @@
 
    - (optional) `See Classes` button to show classes by this Instructor. This will take you to a new link
 
-
-9. **Payment: (Student Dashboard)**
+7. **Payment: (Student Dashboard)**
 
    - Create a payment history page for students. It will show the payment made by that student. Make sure to sort the payment history descending. The newest payment will be at the top
 
@@ -101,9 +100,6 @@
     - [React-awesome-reveal](https://react-awesome-reveal.morello.dev/)
     - [React-spring](https://www.react-spring.dev/)
     - [React-anime](https://github.com/juliangarnier/anime)
-
-<hr/>
-<br/>
 
 ## :writing_hand: **Bonus Task:**
 

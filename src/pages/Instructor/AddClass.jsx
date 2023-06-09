@@ -2,13 +2,13 @@ import React, { useContext } from 'react';
 import useAxiosSecure from '../../hooks/useAxiosSecure';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const AddClass = () => {
   const [axiosSecure] = useAxiosSecure();
   const { user } = useContext(AuthContext);
   const { register, handleSubmit, reset } = useForm();
   const imageHostingUrl = `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_image_upload_token}`;
-  console.log(user.displayName);
 
   const onSubmit = (data) => {
     const formData = new FormData();
@@ -21,12 +21,22 @@ const AddClass = () => {
       .then((res) => res.json())
       .then((imgData) => {
         if (imgData.success) {
-          const { category, name, price, recipe } = data;
-          const newItem = { category, name, price: parseFloat(price), recipe, image: imgData.data.display_url };
-          console.log(newItem);
-          axiosSecure.post('/menu', newItem).then((postedMenu) => {
-            console.log(postedMenu.data);
-            if (postedMenu.data.insertedId) {
+          const { className, instructorName, instructorEmail, totalSeats, price } = data;
+          const newClass = {
+            className,
+            instructorName,
+            instructorEmail,
+            totalSeats,
+            price: parseFloat(price),
+            status: 'pending',
+            enrolledStudents: 0,
+            feedback: '',
+            image: imgData.data.display_url,
+          };
+          console.log(newClass);
+          axiosSecure.post('/instructors/add-class', newClass).then((postedClass) => {
+            console.log(postedClass.data);
+            if (postedClass.data.insertedId) {
               Swal.fire({
                 position: 'top-end',
                 icon: 'success',
