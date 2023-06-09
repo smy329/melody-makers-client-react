@@ -11,7 +11,10 @@ const Instructors = () => {
   return (
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
       {instructors.map((singleInstructor) => (
-        <div className=" bg-white shadow rounded border border-transparent hover:border-blue-500 cursor-pointer mx-2 ">
+        <div
+          className=" bg-white shadow rounded border border-transparent hover:border-blue-500 cursor-pointer mx-2 "
+          key={singleInstructor._Id}
+        >
           <div className=" bg-gray-200 flex flex-col justify-between object-cover">
             <img src={singleInstructor?.image} alt="" />
           </div>

@@ -27,6 +27,8 @@ const AddClass = () => {
             instructorName,
             instructorEmail,
             totalSeats,
+            instructorName,
+            instructorEmail,
             price: parseFloat(price),
             status: 'pending',
             enrolledStudents: 0,
@@ -40,9 +42,9 @@ const AddClass = () => {
               Swal.fire({
                 position: 'top-end',
                 icon: 'success',
-                title: 'Food item has been added successfully',
+                title: 'Class has been added successfully',
                 showConfirmButton: false,
-                timer: 1500,
+                timer: 1000,
               });
               reset();
             }

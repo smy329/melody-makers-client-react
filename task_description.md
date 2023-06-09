@@ -51,17 +51,6 @@
     <br/>
     **_It will be private & only an instructor can access this route._**
 
-    - **Add a Class:** This page will have a form with the following fields:
-
-      - Class name
-      - Class Image
-      - Instructor name (read-only) **(use the displayName value of logged in user/instructor)**
-      - Instructor email (read-only) **(use the email value of logged in user/instructor)**
-      - Available seats
-      - Price
-      - Add button
-      - When creating a class on the database, the value of the status field will be pending.
-
     - **My Classes:** Show all the Classes an instructor has added after clicking the **Add button** from the **Add a Class page**. Each Class will show relevant information, including **pending/ approved/ denied** status, **Total Enrolled Students**, **Feedback** & **Update button**.
 
       - **Total Enrolled Students:** Initially it will be zero. If any student has successfully booked the Class, show the total number of students.

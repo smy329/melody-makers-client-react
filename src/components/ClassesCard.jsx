@@ -51,9 +51,7 @@ const ClassesCard = ({ singleClass }) => {
       <div className="p-4 ">
         <div className="flex items-center justify-between">
           <h1 className="text-gray-600 font-medium">{name}</h1>
-          <span className=" uppercase text-xl bg-green-50 p-1 border-green-500 border rounded text-green-700 font-bold">
-            ${price}
-          </span>
+          <span className="theme-badge-success">${price}</span>
         </div>
         <p className="text-gray-400 text-sm my-1 flex-grow">Instructor: {instructorName}</p>
         <p className="text-gray-400 text-sm my-1 flex-grow">Availale Seats: {availableSeats}</p>

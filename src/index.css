@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 .btn-theme {
-  @apply bg-blue-500 w-full font-medium text-white rounded-md px-2 py-2;
+  @apply bg-blue-500 w-full font-medium text-white rounded-md px-2 py-2 cursor-pointer;
+}
+
+.btn-theme-small {
+  @apply bg-blue-500 inline-block font-medium text-white rounded-lg px-4 py-1.5 justify-center items-center cursor-pointer;
 }
 
 .drawer-side a {
@@ -12,4 +16,16 @@
 
 .drawer-side a.active {
   @apply font-medium tracking-wide text-blue-700 bg-white duration-200;
+}
+
+.theme-badge-success {
+  @apply uppercase inline-block text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium;
+}
+
+.theme-badge-warning {
+  @apply uppercase inline-block  text-xs bg-amber-50 p-0.5 border-amber-500 border rounded text-amber-700 font-medium;
+}
+
+.theme-badge-error {
+  @apply uppercase inline-block text-xs bg-red-50 p-0.5 border-red-500 border rounded text-red-700 font-medium;
 }
