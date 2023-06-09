@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../providers/AuthProvider';
 import { Navigate, useLocation } from 'react-router-dom';
 import useAdmin from '../hooks/useAdmin';
+import Loader from '../components/Loader';
 //import { toast } from 'react-hot-toast';
 
 const AdminRoute = ({ children }) => {
@@ -10,11 +11,7 @@ const AdminRoute = ({ children }) => {
   const [isAdmin, isAdminLoading] = useAdmin();
 
   if (loading || isAdminLoading) {
-    return (
-      <div className="flex justify-center items-center  h-[calc(100vh-200px)]">
-        <progress className="progress w-56"></progress>
-      </div>
-    );
+    return <Loader />;
   }
   if (user && isAdmin) {
     return children;

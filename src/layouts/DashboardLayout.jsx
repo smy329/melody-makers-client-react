@@ -43,8 +43,18 @@ const DashboardLayout = () => {
             {isInstructor ? (
               <>
                 <li>
-                  <NavLink to="/users/dashboard">
+                  <NavLink to="/instructors/dashboard">
                     <FaHome /> Instructor Dashboard
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/instructors/add-class">
+                    <FaHome /> Add a Class
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/instructors/my-classes">
+                    <FaHome /> My Classes
                   </NavLink>
                 </li>
               </>
@@ -63,6 +73,11 @@ const DashboardLayout = () => {
                 <li>
                   <NavLink to="/users/my-enrolled-classes">
                     <FaHome /> My Enrolled Classes
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/users/payment-history">
+                    <FaHome /> Payment History
                   </NavLink>
                 </li>
               </>

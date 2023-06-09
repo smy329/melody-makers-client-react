@@ -12,6 +12,12 @@ import AdminDashboard from '../pages/Admin/AdminDashboard';
 import AdminRoute from './AdminRoute';
 import MySelectedClasses from '../pages/Dashboard/MySelectedClasses';
 import MyEnrolledClasses from '../pages/Dashboard/MyEnrolledClasses';
+import PaymentHistory from '../pages/Dashboard/PaymentHistory';
+import MakePayment from '../pages/Dashboard/MakePayment';
+import InstructorRoute from './InstructorRoute';
+import InstructorDashboard from '../pages/Instructor/InstructorDashboard';
+import MyClasses from '../pages/Instructor/MyClasses';
+import AddClass from '../pages/Instructor/AddClass';
 
 export const router = createBrowserRouter([
   {
@@ -59,6 +65,48 @@ export const router = createBrowserRouter([
       {
         path: 'my-enrolled-classes',
         element: <MyEnrolledClasses />,
+      },
+      {
+        path: 'payment-history',
+        element: <PaymentHistory />,
+      },
+      {
+        path: 'make-payment',
+        element: <MakePayment />,
+      },
+    ],
+  },
+  {
+    path: '/instructors',
+    element: (
+      <PrivateRoute>
+        <DashboardLayout />
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: 'dashboard',
+        element: (
+          <InstructorRoute>
+            <InstructorDashboard />
+          </InstructorRoute>
+        ),
+      },
+      {
+        path: 'add-class',
+        element: (
+          <InstructorRoute>
+            <AddClass />
+          </InstructorRoute>
+        ),
+      },
+      {
+        path: 'my-classes',
+        element: (
+          <InstructorRoute>
+            <MyClasses />
+          </InstructorRoute>
+        ),
       },
     ],
   },

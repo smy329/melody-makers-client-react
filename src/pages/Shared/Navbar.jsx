@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { HiUserCircle } from 'react-icons/hi2';
 import logo from '../../assets/images/logo.png';
 import { AuthContext } from '../../providers/AuthProvider';
@@ -8,6 +8,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 import { Tooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
 import useAdmin from '../../hooks/useAdmin';
+import useInstructor from '../../hooks/useInstructor';
 
 const Navbar = () => {
   //const { user, logOut } = useContext(AuthContext);
@@ -15,11 +16,14 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   console.log(isMenuOpen);
   const [isAdmin] = useAdmin();
+  const [isInstructor] = useInstructor();
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     logOut()
       .then(() => {
         console.log('Logged out successfully');
+        navigate('/');
       })
       .catch((error) => {
         console.log(error.message);
@@ -63,7 +67,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   className="text-base font-medium p-2 md:p-5 text-black hover:text-primary tracking-wide"
-                  to={isAdmin ? '/admin/dashboard' : '/users/dashboard'}
+                  to={isAdmin ? '/admin/dashboard' : isInstructor ? '/instructors/dashboard' : '/users/dashboard'}
                 >
                   Dashboard
                 </Link>
@@ -83,7 +87,11 @@ const Navbar = () => {
                       data-tooltip-content={user?.displayName}
                     />
                   ) : (
-                    <HiUserCircle className="h-8 w-8 " />
+                    <HiUserCircle
+                      className="h-8 w-8 "
+                      data-tooltip-id="profile-name"
+                      data-tooltip-content={user?.displayName}
+                    />
                   )}
                 </span>
               </>
@@ -231,6 +239,7 @@ const Navbar = () => {
                               className=" h-8 w-8 rounded-full"
                               data-tooltip-id="profile-name"
                               data-tooltip-content={user.displayName}
+                              referrerPolicy="no-referrer"
                             />
                           ) : (
                             <HiUserCircle className="h-8 w-8 " />
