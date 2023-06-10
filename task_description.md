@@ -55,20 +55,13 @@
       - There will be no feedback if the Class is in pending or approved status.
       - If the Class is in the denied state by the admin, at that time, an admin can write feedback
 
-11. **Admin Dashboard:**
-    <br/>
-
-    > **Note:** A modal will be opened When the admin clicks the send feedback button. Admin will write the approved/denied reason in a text field and send it to the Instructor. You can also do this in another route except for the modal.
-
-12. Use **relevant icons** in your **dashboard menus**, animations on your website.\. You have to use **anyone** of the animation libraries below:
+11. Use **relevant icons** in your **dashboard menus**, animations on your website.\. You have to use **anyone** of the animation libraries below:
     - [Framer-motion](https://www.framer.com/motion/)
     - [React-awesome-reveal](https://react-awesome-reveal.morello.dev/)
     - [React-spring](https://www.react-spring.dev/)
     - [React-anime](https://github.com/juliangarnier/anime)
 
 ## :writing_hand: **Bonus Task:**
-
-1. Minimum 20 meaningful git commits on the client-side repository and 12 meaningful commits on the server-side repository. Feel free to commit as many as needed to save your progress during load-shedding.
 
 2. Create a readme for the client-side and write about your project.
 

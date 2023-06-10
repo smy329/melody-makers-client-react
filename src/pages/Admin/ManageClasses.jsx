@@ -7,7 +7,6 @@ import FeedbackModal from '../../components/Modals/FeedbackModal';
 const ManageClasses = () => {
   const { user, loading } = useContext(AuthContext);
   const [axiosSecure] = useAxiosSecure();
-  // const [selectedClassId, setSelectedClassId] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedClass, setSelectedClass] = useState(null);
   const { data: classes, refetch } = useQuery({
@@ -36,11 +35,6 @@ const ManageClasses = () => {
     axiosSecure.patch('/manage-classes/status', updateStatus).then((res) => console.log(res.data));
     refetch();
   };
-
-  // const handleOpenModal = (classIdFromTable) => {
-  //   setSelectedClassId(classIdFromTable);
-  //   console.log(classIdFromTable);
-  // };
 
   const handleFeedbackClick = (classId) => {
     setSelectedClass(classId);
@@ -112,7 +106,7 @@ const ManageClasses = () => {
                     >
                       Deny
                     </button>
-                    {singleClass?.status === 'denied' ? (
+                    {singleClass?.status !== 'pending' ? (
                       <button
                         className="btn-theme-small disabled:btn-disabled"
                         onClick={() => handleFeedbackClick(singleClass._id)}
@@ -124,21 +118,6 @@ const ManageClasses = () => {
                         Send Feedback
                       </button>
                     )}
-                    {/* <div
-                      className={` ${
-                        selectedClassId
-                          ? ''
-                          : singleClass.status === 'denied'
-                          ? 'btn-theme-small'
-                          : 'pointer-events-none btn-theme-gray-small'
-                      }`}
-                      onClick={() => {
-                        handleOpenModal(singleClass?.className);
-                        // console.log(singleClass?.className);
-                      }}
-                    >
-                      Feedback
-                    </div> */}
                   </th>
                 </tr>
               </tbody>
@@ -146,7 +125,6 @@ const ManageClasses = () => {
           })}
         </table>
       </div>
-      {/* {selectedClassId && <FeedbackModal classId={selectedClassId} onClose={() => selectedClassId(null)} />} */}
       {selectedClass && <FeedbackModal classId={selectedClass} closeModal={closeModal} />}
     </div>
   );

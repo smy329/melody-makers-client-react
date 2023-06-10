@@ -20,6 +20,7 @@ import MyClasses from '../pages/Instructor/MyClasses';
 import AddClass from '../pages/Instructor/AddClass';
 import ManageClasses from '../pages/Admin/ManageClasses';
 import ManageUsers from '../pages/Admin/ManageUsers';
+import Error404 from '../pages/Error404';
 
 export const router = createBrowserRouter([
   {
@@ -145,5 +146,9 @@ export const router = createBrowserRouter([
         ),
       },
     ],
+  },
+  {
+    path: '404',
+    element: <Error404 />,
   },
 ]);
