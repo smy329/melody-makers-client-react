@@ -27,6 +27,8 @@ const MyClasses = () => {
               <th>Price</th>
               <th>Total Seats</th>
               <th>Enrolled</th>
+              <th>Status</th>
+              <th>Feedback</th>
               <th> Action</th>
             </tr>
           </thead>
@@ -63,7 +65,7 @@ const MyClasses = () => {
                   <td>{singleMyClass?.enrolledStudents} </td>
                   <th className="flex gap-1 justify-center">
                     <button className="btn btn-outline btn-xs">details</button>
-                    <button className="btn btn-primary bg-blue-700 text-white btn-xs">Update</button>
+                    <button className="btn-theme-small">Update</button>
                   </th>
                 </tr>
               </tbody>

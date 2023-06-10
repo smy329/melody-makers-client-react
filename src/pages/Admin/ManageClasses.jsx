@@ -1,11 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import useAxiosSecure from '../../hooks/useAxiosSecure';
 import { useQuery } from '@tanstack/react-query';
+import FeedbackModal from '../../components/Modals/FeedbackModal';
 
 const ManageClasses = () => {
   const { user, loading } = useContext(AuthContext);
   const [axiosSecure] = useAxiosSecure();
+  // const [selectedClassId, setSelectedClassId] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedClass, setSelectedClass] = useState(null);
   const { data: classes, refetch } = useQuery({
     queryKey: ['classes', user?.email],
     enabled: !loading,
@@ -32,13 +36,27 @@ const ManageClasses = () => {
     axiosSecure.patch('/manage-classes/status', updateStatus).then((res) => console.log(res.data));
     refetch();
   };
+
+  // const handleOpenModal = (classIdFromTable) => {
+  //   setSelectedClassId(classIdFromTable);
+  //   console.log(classIdFromTable);
+  // };
+
+  const handleFeedbackClick = (classId) => {
+    setSelectedClass(classId);
+  };
+
+  const closeModal = () => {
+    setSelectedClass(null);
+  };
   return (
     <div>
-      <div className="overflow-x-auto">
-        <table className="table m-5 w-11/12 mx-auto text-center">
+      <div className="overflow-x-auto bg-blue-50">
+        <h1 className="text-3xl font-semibold text-center m-8">Manage Classes</h1>
+        <table className="table m-5 w-11/12 mx-auto text-center bg-white">
           {/* head */}
           <thead>
-            <tr>
+            <tr className="bg-green-200 font-medium text-sm">
               <th>#</th>
               <th>Image</th>
               <th>Name</th>
@@ -94,6 +112,33 @@ const ManageClasses = () => {
                     >
                       Deny
                     </button>
+                    {singleClass?.status === 'denied' ? (
+                      <button
+                        className="btn-theme-small disabled:btn-disabled"
+                        onClick={() => handleFeedbackClick(singleClass._id)}
+                      >
+                        Send Feedback
+                      </button>
+                    ) : (
+                      <button className="bg-gray-300 text-gray-500 font-bold py-2 px-4 rounded" disabled>
+                        Send Feedback
+                      </button>
+                    )}
+                    {/* <div
+                      className={` ${
+                        selectedClassId
+                          ? ''
+                          : singleClass.status === 'denied'
+                          ? 'btn-theme-small'
+                          : 'pointer-events-none btn-theme-gray-small'
+                      }`}
+                      onClick={() => {
+                        handleOpenModal(singleClass?.className);
+                        // console.log(singleClass?.className);
+                      }}
+                    >
+                      Feedback
+                    </div> */}
                   </th>
                 </tr>
               </tbody>
@@ -101,6 +146,8 @@ const ManageClasses = () => {
           })}
         </table>
       </div>
+      {/* {selectedClassId && <FeedbackModal classId={selectedClassId} onClose={() => selectedClassId(null)} />} */}
+      {selectedClass && <FeedbackModal classId={selectedClass} closeModal={closeModal} />}
     </div>
   );
 };
