@@ -33,14 +33,19 @@ const DashboardLayout = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/admin/users">
-                    <FaHome /> All Users
+                  <NavLink to="/admin/manage-users">
+                    <FaHome /> Manage Users
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/admin/manage-classes">
+                    <FaHome /> Manage Classes
                   </NavLink>
                 </li>
               </>
             )}
 
-            {isInstructor ? (
+            {isInstructor && (
               <>
                 <li>
                   <NavLink to="/instructors/dashboard">
@@ -58,7 +63,9 @@ const DashboardLayout = () => {
                   </NavLink>
                 </li>
               </>
-            ) : (
+            )}
+
+            {!isAdmin && !isInstructor && (
               <>
                 <li>
                   <NavLink to="/users/dashboard">

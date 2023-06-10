@@ -16,24 +16,24 @@ const MyClasses = () => {
   });
   return (
     <div>
-      {myClassesFromDB.map((singleMyClass, index) => {
-        refetch();
-        return (
-          <div className="overflow-x-auto" key={singleMyClass._id}>
-            <table className="table m-5 w-11/12 mx-auto text-center">
-              {/* head */}
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Class Image</th>
-                  <th>Class Name</th>
-                  <th>Price</th>
-                  <th>Total Seats</th>
-                  <th>Enrolled</th>
-                  <th> Action</th>
-                </tr>
-              </thead>
-              <tbody>
+      <div className="overflow-x-auto">
+        <table className="table m-5 w-11/12 mx-auto text-center">
+          {/* head */}
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Class Image</th>
+              <th>Class Name</th>
+              <th>Price</th>
+              <th>Total Seats</th>
+              <th>Enrolled</th>
+              <th> Action</th>
+            </tr>
+          </thead>
+          {myClassesFromDB.map((singleMyClass, index) => {
+            refetch();
+            return (
+              <tbody key={singleMyClass._id}>
                 {/* row 1 */}
                 <tr>
                   <th>{index + 1}</th>
@@ -67,10 +67,10 @@ const MyClasses = () => {
                   </th>
                 </tr>
               </tbody>
-            </table>
-          </div>
-        );
-      })}
+            );
+          })}
+        </table>
+      </div>
     </div>
   );
 };

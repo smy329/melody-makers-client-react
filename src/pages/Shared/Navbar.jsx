@@ -14,7 +14,6 @@ const Navbar = () => {
   //const { user, logOut } = useContext(AuthContext);
   const { user, logOut } = useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  console.log(isMenuOpen);
   const [isAdmin] = useAdmin();
   const [isInstructor] = useInstructor();
   const navigate = useNavigate();

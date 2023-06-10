@@ -51,15 +51,9 @@
     <br/>
     **_It will be private & only an instructor can access this route._**
 
-    - **My Classes:** Show all the Classes an instructor has added after clicking the **Add button** from the **Add a Class page**. Each Class will show relevant information, including **pending/ approved/ denied** status, **Total Enrolled Students**, **Feedback** & **Update button**.
-
-      - **Total Enrolled Students:** Initially it will be zero. If any student has successfully booked the Class, show the total number of students.
-
-      - **Feedback:**
-        - There will be no feedback if the Class is in pending or approved status.
-        - If the Class is in the denied state by the admin, at that time, an admin can write feedback explaining why the Class was denied, which will appear in the feedback column.
-
-<br/>
+    - **Feedback:**
+      - There will be no feedback if the Class is in pending or approved status.
+      - If the Class is in the denied state by the admin, at that time, an admin can write feedback
 
 11. **Admin Dashboard:**
     <br/>
@@ -72,17 +66,6 @@
       > **Note:** If the admin clicks the Deny button, the status will be updated to denied. The Deny and the Approve button will become disabled.
 
       > **Note:** A modal will be opened When the admin clicks the send feedback button. Admin will write the approved/denied reason in a text field and send it to the Instructor. You can also do this in another route except for the modal.
-
-        </br>
-
-    - **Manage Users:** The admin can see the relevant information of all registered users. By default, everyone will be a student. And there will be **2 buttons**: **Make Instructor** button and **Make Admin** button. If a user clicks any of the buttons, disable it.
-
-      - **Make Instructor button Action:** Update the user role as an instructor.
-
-        > **Note:** If the admin makes a user instructor, that user profile page will have the Instructor as the role
-
-      - **Make Admin button Action:** Update the user role as an admin.
-        </br>
 
 12. Use **relevant icons** in your **dashboard menus**, animations on your website.\. You have to use **anyone** of the animation libraries below:
     - [Framer-motion](https://www.framer.com/motion/)
@@ -105,28 +88,7 @@
 
 4. Make the home page responsive. If possible, Make your entire website responsive\. (It is ok if the table is not responsive\.)
 
-5. Use tanstack query (react-query) in at least two places. If needed, you can use it everywhere.
-
-6. use Axios for at least two calls.
-
-7. Must Use [react-hook-form](https://react-hook-form.com/) in the registration & login page. Using react hook form in another place is optional.
-
-</br>
-
-8. Use the Environment variables both on the client side & server side\.
-
-</br>
-
-9. Implement JWT token for Login and Registration systems (Email/ password & social login)\. You will send the token for the Dashboard routes and verify the user\.
-
-</br>
-
-10. Create a 404 page\. Add any interesting image/ animation & a back-to-home button on the 404 page\. **Do not add header & footer in this page**\.
-
-</br>
-
-<hr/>
-<br/>
+5. Create a 404 page\. Add any interesting image/ animation & a back-to-home button on the 404 page\. **Do not add header & footer in this page**\.
 
 ## :writing_hand: **Optional Task:**
 

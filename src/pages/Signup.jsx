@@ -31,7 +31,11 @@ const Signup = () => {
               headers: {
                 'content-type': 'application/json',
               },
-              body: JSON.stringify({ name: data.name, email: data.email, image: data.profileUrl, role: 'user' }),
+              body: JSON.stringify({
+                name: data.name,
+                email: data.email,
+                image: data.profileUrl,
+              }),
             })
               .then((res) => res.json())
               .then((data) => {
