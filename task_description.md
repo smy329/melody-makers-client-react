@@ -74,8 +74,6 @@
 
 4. Make the home page responsive. If possible, Make your entire website responsive\. (It is ok if the table is not responsive\.)
 
-5. Create a 404 page\. Add any interesting image/ animation & a back-to-home button on the 404 page\. **Do not add header & footer in this page**\.
-
 ## :writing_hand: **Optional Task:**
 
 1. (Highly Recommended) Add extra features you have learned so far, or you can explore new things. This will help you in the future to differentiate your project from others.
