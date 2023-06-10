@@ -1,11 +1,5 @@
 ## :writing_hand: **Main Requirements**
 
-2. Make sure to keep the navbar and footer **on all the pages except on the 404 page**. Create a good, stylish, and meaningful footer. (including website logo or name or both, copyright, some contact information, Address etc.)
-
-<br/>
-
-<br/>
-
 4. **Registration & Login System:**
 
    **Login Page:**

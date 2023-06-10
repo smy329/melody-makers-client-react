@@ -1,14 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
 import SocialLogin from '../components/SocialLogin';
+import { FaEye } from 'react-icons/fa';
+import { Fa500Px } from 'react-icons/fa';
 
 const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { user, loading, setLoading, logInWithEmail } = useContext(AuthContext);
+  const [visibility, setVisibility] = useState(false);
 
   const {
     register,
@@ -50,7 +53,7 @@ const Login = () => {
                       id="email"
                       name="email"
                       type="text"
-                      className="peer placeholder-transparent 0 h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
+                      className="peer placeholder-transparent 0 h-12 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
                       placeholder="Emailsfdfsdf"
                       {...register('email', { required: true })}
                     />
@@ -67,8 +70,8 @@ const Login = () => {
                       autoComplete="off"
                       id="password"
                       name="password"
-                      type="password"
-                      className="peer placeholder-transparent 0 h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
+                      type={visibility ? 'text' : 'password'}
+                      className="peer placeholder-transparent 0 h-12 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
                       placeholder="Password"
                       {...register('password', {
                         required: true,
@@ -77,6 +80,15 @@ const Login = () => {
                         pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
                       })}
                     />
+                    <div
+                      className="absolute top-3 right-3 cursor-pointer"
+                      onClick={() => {
+                        setVisibility(!visibility);
+                      }}
+                    >
+                      <FaEye />
+                    </div>
+
                     <label
                       htmlFor="password"
                       className="absolute left-0 -top-5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
