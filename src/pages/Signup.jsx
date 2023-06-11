@@ -26,7 +26,7 @@ const Signup = () => {
           .then(() => {
             //const DbUserdata = {name: data.name, email: data.email, image: data.profileUrl}
             console.log('Updating profile with name & profile image url', loggedUser);
-            fetch('http://localhost:5000/users', {
+            fetch('https://melody-makers-camp-server-smy329-gmailcom.vercel.app/users', {
               method: 'POST',
               headers: {
                 'content-type': 'application/json',
@@ -178,7 +178,13 @@ const Signup = () => {
                   </div>
 
                   <div className="relative">
-                    <button className="bg-blue-500 text-white rounded-md px-2 py-1">Submit</button>
+                    <button className="btn-theme">Submit</button>
+                    <p className="text-sm font-light text-gray-500">
+                      Aleady have an accountt? &nbsp;
+                      <a href="/login" className="font-medium text-gray-600 hover:underline">
+                        Login
+                      </a>
+                    </p>
                   </div>
                 </div>
               </form>

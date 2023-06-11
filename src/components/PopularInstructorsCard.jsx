@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PopularInstructorsCard = ({ singleInstructor }) => {
-  const { name, image, email, classesName, totalStudents } = singleInstructor;
+  const { name, image, email, classes, totalStudents } = singleInstructor;
 
   return (
     <div className=" w-80 bg-white shadow rounded border border-transparent hover:border-blue-500 cursor-pointer mx-2">
@@ -28,7 +28,7 @@ const PopularInstructorsCard = ({ singleInstructor }) => {
             </svg>
           </button>
         </div>
-        <p className="text-gray-400 text-sm my-1 flex-grow">Total Classes: {classesName?.length}</p>
+        <p className="text-gray-400 text-sm my-1 flex-grow">Total Classes: {classes?.length || 0}</p>
         <p className="text-gray-400 text-sm my-1 flex-grow">Total Students: {totalStudents}</p>
         <span className=" uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium">
           {email}

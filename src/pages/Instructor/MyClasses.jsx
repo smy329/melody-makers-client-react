@@ -63,8 +63,9 @@ const MyClasses = () => {
                   <td>{singleMyClass?.price} </td>
                   <td>{singleMyClass?.totalSeats} </td>
                   <td>{singleMyClass?.enrolledStudents} </td>
+                  <td>{singleMyClass?.status} </td>
+                  <td>{singleMyClass?.status === 'denied' ? singleMyClass?.feedback : ''} </td>
                   <th className="flex gap-1 justify-center">
-                    <button className="btn btn-outline btn-xs">details</button>
                     <button className="btn-theme-small">Update</button>
                   </th>
                 </tr>

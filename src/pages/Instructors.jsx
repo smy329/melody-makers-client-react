@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Instructors = () => {
   const [instructors, setInstructors] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/instructors')
+    fetch('https://melody-makers-camp-server-smy329-gmailcom.vercel.app/instructors')
       .then((res) => res.json())
       .then((data) => setInstructors(data))
       .catch((error) => console.log(error.message));
@@ -13,7 +13,7 @@ const Instructors = () => {
       {instructors.map((singleInstructor) => (
         <div
           className=" bg-white shadow rounded border border-transparent hover:border-blue-500 cursor-pointer mx-2 "
-          key={singleInstructor._Id}
+          key={singleInstructor._id}
         >
           <div className=" bg-gray-200 flex flex-col justify-between object-cover">
             <img src={singleInstructor?.image} alt="" />
@@ -27,7 +27,7 @@ const Instructors = () => {
             </div>
             <div className="flex justify-between">
               <p className="text-gray-400 text-sm my-1 flex-grow">
-                Total Classes: {singleInstructor?.classesName?.length}
+                Total Classes: {singleInstructor?.classes?.length || 0}
               </p>
               <p className="text-gray-400 text-right text-sm my-1 flex-grow">
                 Total Students: {singleInstructor.totalStudents}

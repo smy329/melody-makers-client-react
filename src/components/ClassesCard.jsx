@@ -11,7 +11,7 @@ const ClassesCard = ({ singleClass }) => {
   const { user, loading } = useContext(AuthContext);
   const [isAdmin] = useAdmin();
   const [isInstructor] = useInstructor();
-  const { image, name, price, instructorName, totalSeats, enrolledStudents, _id } = singleClass;
+  const { image, className, price, instructorName, totalSeats, enrolledStudents, _id } = singleClass;
   const availableSeats = totalSeats - enrolledStudents;
   const [axiosSecure] = useAxiosSecure();
   const navigate = useNavigate();
@@ -50,7 +50,7 @@ const ClassesCard = ({ singleClass }) => {
       </div>
       <div className="p-4 ">
         <div className="flex items-center justify-between">
-          <h1 className="text-gray-600 font-medium">{name}</h1>
+          <h1 className="text-gray-600 font-medium">{className}</h1>
           <span className="theme-badge-success">${price}</span>
         </div>
         <p className="text-gray-400 text-sm my-1 flex-grow">Instructor: {instructorName}</p>

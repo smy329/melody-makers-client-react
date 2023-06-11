@@ -1,7 +1,8 @@
 import React from 'react';
 
 const PopularClassesCard = ({ singleClass }) => {
-  const { name, image, instructorName, desc } = singleClass;
+  const { className, image, instructorName, desc } = singleClass;
+  console.log(singleClass);
   return (
     <div className=" w-80 bg-white shadow rounded border border-transparent hover:border-blue-500 cursor-pointer mx-2">
       <div className=" w-full bg-gray-200 flex flex-col justify-between bg-cover bg-center object-cover">
@@ -9,7 +10,7 @@ const PopularClassesCard = ({ singleClass }) => {
       </div>
       <div className="p-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-gray-600 font-medium">{name}</h1>
+          <h1 className="text-gray-600 font-medium">{className}</h1>
           <button className="text-gray-500 hover:text-gray-900">
             <svg
               xmlns="http://www.w3.org/2000/svg"

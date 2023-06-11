@@ -6,7 +6,7 @@ import Marquee from 'react-fast-marquee';
 const PopularClasses = () => {
   const [classes, setClasses] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/popular-classes')
+    fetch('https://melody-makers-camp-server-smy329-gmailcom.vercel.app/popular-classes')
       .then((res) => res.json())
       .then((data) => setClasses(data))
       .catch((error) => console.log(error.message));

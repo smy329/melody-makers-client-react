@@ -1,38 +1,44 @@
 [
   {
-    "image": "https://images.unsplash.com/photo-1465821185615-20b3c2fbf41b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=998&q=80",
+    "image": "https://plus.unsplash.com/premium_photo-1661893957671-2a88b1eb3b45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80",
     "name": "Mark Turner",
     "email": "john.doe@example.com",
-    "classesName": ["Piano", "Violin"]
+    "classes": ["64855998f425be2ad5ed1f74"],
+    "role": "instructor"
   },
   {
-    "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "image": "https://plus.unsplash.com/premium_photo-1682089460958-197625f994af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     "name": "Robert Johnson",
     "email": "emily.smith@gmail.com",
-    "classesName": ["Guitar"]
+    "classes": ["64855998f425be2ad5ed1f75"],
+    "role": "instructor"
   },
   {
-    "image": "https://images.unsplash.com/photo-1519874179391-3ebc752241dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "image": "https://plus.unsplash.com/premium_photo-1661311834941-88cccc3b7a81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     "name": "Rachel Thompson",
     "email": "david.wilson@yahoo.com",
-    "classesName": ["Voice"]
+    "classes": ["64855998f425be2ad5ed1f76", "64855998f425be2ad5ed1f7b"],
+    "role": "instructor"
   },
   {
-    "image": "https://images.unsplash.com/photo-1543443258-92b04ad5ec6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "image": "https://images.unsplash.com/photo-1497405417022-3fefbce30a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     "name": "Jessica Adams",
     "email": "sarah.johnson@hotmail.com",
-    "classesName": ["Drums", "Double Bass"]
+    "classes": ["64855998f425be2ad5ed1f77", "64855998f425be2ad5ed1f78"],
+    "role": "instructor"
   },
   {
-    "image": "https://images.unsplash.com/photo-1538992212037-196a87ac8c61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80",
+    "image": "https://images.unsplash.com/photo-1445965752525-ac2d3c195ffe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
     "name": "Sarah Johnson",
     "email": "jennifer.davis@gmail.com",
-    "classesName": ["Cello"]
+    "classes": ["64855998f425be2ad5ed1f79"],
+    "role": "instructor"
   },
   {
-    "image": "https://images.unsplash.com/photo-1613168461287-6e529b708c76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "image": "https://images.unsplash.com/photo-1488509986336-50f64ab87fb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     "name": "Michael Davis",
     "email": "laura.thompson@hotmail.com",
-    "classesName": ["Saxophone"]
+    "classes": ["64855998f425be2ad5ed1f7a"],
+    "role": "instructor"
   }
 ]

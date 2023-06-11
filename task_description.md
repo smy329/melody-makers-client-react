@@ -1,53 +1,14 @@
 ## :writing_hand: **Main Requirements**
 
-4. **Registration & Login System:**
-
-   **Login Page:**
-   When a user clicks on the login button, they will be redirected to the login page having the following:
-
-   - Email
-   - Password **(This field can hide/unhide the password by clicking on an icon)**
-   - A link that will redirect to the registration page
-   - Keep at least one social login
-
-   <br/>
-
-   **Registration Page:**
-   The Registration page will have the Email/Password form having the following fields:
-
-   - Name
-   - Email
-   - Password
-   - Confirm Password
-   - Photo URL
-   - (optional) Gender
-   - (optional) Phone Number
-   - (optional) Address
-
-   <br/>
-
 5. **Homepage:**
 
    - **Extra Section -** Add one relevant sections. Make it attractive :heart_eyes:. Try to use animation effects.
 
-6. **Instructors Page:**
-   Display all the instructors. Each Instructor will be:
-
-   - (optional) `See Classes` button to show classes by this Instructor. This will take you to a new link
-
-7. **Payment: (Student Dashboard)**
+6. **Payment: (Student Dashboard)**
 
    - Create a payment history page for students. It will show the payment made by that student. Make sure to sort the payment history descending. The newest payment will be at the top
 
 <br/>
-
-10. **Instructor Dashboard:**
-    <br/>
-    **_It will be private & only an instructor can access this route._**
-
-    - **Feedback:**
-      - There will be no feedback if the Class is in pending or approved status.
-      - If the Class is in the denied state by the admin, at that time, an admin can write feedback
 
 11. Use **relevant icons** in your **dashboard menus**, animations on your website.\. You have to use **anyone** of the animation libraries below:
     - [Framer-motion](https://www.framer.com/motion/)

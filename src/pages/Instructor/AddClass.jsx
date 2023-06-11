@@ -46,8 +46,8 @@ const AddClass = () => {
                 showConfirmButton: false,
                 timer: 1000,
               });
-              reset();
             }
+            reset();
           });
         }
       });
