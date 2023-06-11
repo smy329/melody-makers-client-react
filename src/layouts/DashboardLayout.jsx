@@ -1,9 +1,12 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import { FaBars, FaWallet, FaBook, FaCalendarAlt, FaHome, FaShoppingCart, FaUsers, FaUtensils } from 'react-icons/fa';
+import { SiGoogleclassroom, SiAddthis } from 'react-icons/si';
 import { IoIosWallet } from 'react-icons/io';
+import { MdPayment } from 'react-icons/md';
 import useAdmin from '../hooks/useAdmin';
 import useInstructor from '../hooks/useInstructor';
 import Navbar from '../pages/Shared/Navbar';
+import { IoBookmarks } from 'react-icons/io5';
 
 const DashboardLayout = () => {
   const [isAdmin] = useAdmin();
@@ -34,12 +37,12 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <NavLink to="/admin/manage-users">
-                    <FaHome /> Manage Users
+                    <FaUsers /> Manage Users
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/admin/manage-classes">
-                    <FaHome /> Manage Classes
+                    <SiGoogleclassroom /> Manage Classes
                   </NavLink>
                 </li>
               </>
@@ -54,12 +57,12 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <NavLink to="/instructors/add-class">
-                    <FaHome /> Add a Class
+                    <SiAddthis /> Add a Class
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/instructors/my-classes">
-                    <FaHome /> My Classes
+                    <SiGoogleclassroom /> My Classes
                   </NavLink>
                 </li>
               </>
@@ -74,17 +77,17 @@ const DashboardLayout = () => {
                 </li>
                 <li>
                   <NavLink to="/users/my-selected-classes">
-                    <FaHome /> My Selected Classes
+                    <IoBookmarks /> My Selected Classes
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/users/my-enrolled-classes">
-                    <FaHome /> My Enrolled Classes
+                    <SiGoogleclassroom /> My Enrolled Classes
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/users/payment-history">
-                    <FaHome /> Payment History
+                    <MdPayment /> Payment History
                   </NavLink>
                 </li>
               </>

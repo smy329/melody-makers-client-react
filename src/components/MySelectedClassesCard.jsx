@@ -6,7 +6,7 @@ import { Navigate, useNavigate } from 'react-router-dom';
 
 const MySelectedClassesCard = ({ singleClassFromDB, handleDelete }) => {
   const { user, loading } = useContext(AuthContext);
-  const { _id, image, price, name, instructorName, totalSeats, enrolledStudents } = singleClassFromDB;
+  const { _id, image, price, className, instructorName, totalSeats, enrolledStudents } = singleClassFromDB;
   const availableSeats = totalSeats - enrolledStudents;
   const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ const MySelectedClassesCard = ({ singleClassFromDB, handleDelete }) => {
       </div>
       <div className="p-4 ">
         <div className="flex items-center justify-between">
-          <h1 className="text-gray-600 font-medium">{name}</h1>
+          <h1 className="text-gray-600 font-medium">{className}</h1>
           <span className=" uppercase text-xl bg-green-50 px-3 py-1 border-green-500 border rounded text-green-700 font-bold">
             ${price}
           </span>

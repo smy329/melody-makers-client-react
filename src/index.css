@@ -47,3 +47,13 @@
 .theme-badge-error {
   @apply uppercase inline-block text-xs bg-red-50 p-0.5 border-red-500 border rounded text-red-700 font-medium;
 }
+
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+/* Hide the scrollbar for WebKit-based browsers */
+body::-webkit-scrollbar {
+  display: none;
+}
