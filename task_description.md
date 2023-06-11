@@ -15,8 +15,6 @@
 
 3. Implementing a dark/light theme toggle for the home page. It's optional to implement the theme toggle for the entire website\.
 
-4. Make the home page responsive. If possible, Make your entire website responsive\. (It is ok if the table is not responsive\.)
-
 ## :writing_hand: **Optional Task:**
 
 1. (Highly Recommended) Add extra features you have learned so far, or you can explore new things. This will help you in the future to differentiate your project from others.

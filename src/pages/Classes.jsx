@@ -12,7 +12,7 @@ const Classes = () => {
   }, []);
 
   return (
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
+    <div className="p-5 container mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
       {classData.map((singleClass) => (
         <ClassesCard key={singleClass._id} singleClass={singleClass} />
       ))}

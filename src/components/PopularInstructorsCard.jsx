@@ -4,7 +4,7 @@ const PopularInstructorsCard = ({ singleInstructor }) => {
   const { name, image, email, classes, totalStudents } = singleInstructor;
 
   return (
-    <div className=" w-80 bg-white shadow rounded border border-transparent hover:border-blue-500 cursor-pointer mx-2">
+    <div className=" w-80 shadow rounded border border-transparent hover:border-blue-500 cursor-pointer mx-2">
       <div className=" bg-gray-200 flex flex-col justify-between object-cover">
         <img src={image} alt="" />
       </div>
