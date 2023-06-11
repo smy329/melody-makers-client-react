@@ -1,20 +1,8 @@
 ## :writing_hand: **Main Requirements**
 
-5. **Homepage:**
-
-   - **Extra Section -** Add one relevant sections. Make it attractive :heart_eyes:. Try to use animation effects.
-
 6. **Payment: (Student Dashboard)**
 
    - Create a payment history page for students. It will show the payment made by that student. Make sure to sort the payment history descending. The newest payment will be at the top
-
-<br/>
-
-11. Use **relevant icons** in your **dashboard menus**, animations on your website.\. You have to use **anyone** of the animation libraries below:
-    - [Framer-motion](https://www.framer.com/motion/)
-    - [React-awesome-reveal](https://react-awesome-reveal.morello.dev/)
-    - [React-spring](https://www.react-spring.dev/)
-    - [React-anime](https://github.com/juliangarnier/anime)
 
 ## :writing_hand: **Bonus Task:**
 

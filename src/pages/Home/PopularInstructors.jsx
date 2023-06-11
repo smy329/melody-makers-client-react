@@ -13,7 +13,7 @@ const PopularInstructors = () => {
   return (
     <div className="conatiner mx-auto">
       <div>
-        <h1 className="text-7xl font-bold text-center mb-10">Popular Instructors </h1>
+        <h1 className="text-4xl md:text-7xl font-bold text-center mb-10">Popular Instructors </h1>
       </div>
       <Marquee pauseOnHover={true} direction="right">
         {instructors.map((singleInstructor) => (

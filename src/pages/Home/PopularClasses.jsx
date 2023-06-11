@@ -14,7 +14,7 @@ const PopularClasses = () => {
   return (
     <div className="conatiner mx-auto">
       <div>
-        <h1 className="text-7xl font-bold text-center mb-10">Popular Classes </h1>
+        <h1 className="text-4xl md:text-7xl font-bold text-center mb-10">Popular Classes </h1>
       </div>
       <Marquee pauseOnHover={true}>
         {classes.map((singleClass) => (

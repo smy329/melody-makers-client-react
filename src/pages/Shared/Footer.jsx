@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className=" grid grid-cols-1 text-center md:text-left md:grid-cols-5 gap-5 py-20 px-5 ml-5">
           <div className="col-span-1 md:col-span-2 space-y-5">
-            <div className="navbar-start flex items-center">
+            <div className="flex justify-center items-center">
               <img src={logo} alt="logo" className="h-16 w-16" />
               <div>
                 <p className="font-bold text-xl">Melody</p>
