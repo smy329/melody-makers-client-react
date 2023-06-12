@@ -25,7 +25,7 @@ const SocialLogin = () => {
         enrolledClasses: [],
       };
       console.log(saveUser);
-      fetch('http://localhost:5000/users', {
+      fetch('https://melody-makers-camp.web.app/users', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
