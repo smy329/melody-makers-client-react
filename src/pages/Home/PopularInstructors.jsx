@@ -5,7 +5,7 @@ import Marquee from 'react-fast-marquee';
 const PopularInstructors = () => {
   const [instructors, setInstructors] = useState([]);
   useEffect(() => {
-    fetch('https://melody-makers-camp-server-smy329-gmailcom.vercel.app/popular-instructors')
+    fetch('http://localhost:5000/popular-instructors')
       .then((res) => res.json())
       .then((data) => setInstructors(data))
       .catch((error) => console.log(error.message));

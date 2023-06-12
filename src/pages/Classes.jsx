@@ -5,7 +5,7 @@ import ClassesCard from '../components/ClassesCard';
 const Classes = () => {
   const [classData, setClassData] = useState([]);
   useEffect(() => {
-    fetch('https://melody-makers-camp-server-smy329-gmailcom.vercel.app/classes')
+    fetch('http://localhost:5000/classes')
       .then((res) => res.json())
       .then((data) => setClassData(data))
       .catch((error) => console.log(error.message));

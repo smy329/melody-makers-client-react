@@ -10,7 +10,7 @@ import CheckoutForm from '../../components/CheckoutForm';
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe(import.meta.env.VITE_stripe_pk_public_token);
 
-const MakePayment = () => {
+const TestPay = () => {
   const { user, loading } = useContext(AuthContext);
   const [axiosSecure] = useAxiosSecure();
   const location = useLocation();
@@ -18,12 +18,12 @@ const MakePayment = () => {
   const { _id, price } = location?.state || {};
   const finalPrice = parseFloat(price.toFixed(2));
 
-  // const handleMakePayment = () => {
-  //   const enrolledClassData = { email: user.email, classId: _id };
-  //   axiosSecure.patch('/users/enrolled-classes', enrolledClassData).then((res) => {
-  //     console.log(res.data);
-  //   });
-  // };
+  const handleMakePayment = () => {
+    // const enrolledClassData = { email: user.email, classId: _id };
+    // axiosSecure.patch('/users/enrolled-classes', enrolledClassData).then((res) => {
+    //   console.log(res.data);
+    // });
+  };
   return (
     <div className="w-3/5 mx-auto my-auto">
       <h1>{user?.email}</h1>
@@ -39,4 +39,4 @@ const MakePayment = () => {
   );
 };
 
-export default MakePayment;
+export default TestPay;

@@ -11,4 +11,11 @@ export default {
   daisyui: {
     themes: ['light', 'dark'],
   },
+  variants: {
+    extend: {
+      backgroundColor: ['dark'],
+      textColor: ['dark'],
+      // Add any other properties you want to apply in dark mode
+    },
+  },
 };

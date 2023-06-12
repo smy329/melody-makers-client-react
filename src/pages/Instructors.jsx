@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Instructors = () => {
   const [instructors, setInstructors] = useState([]);
   useEffect(() => {
-    fetch('https://melody-makers-camp-server-smy329-gmailcom.vercel.app/instructors')
+    fetch('http://localhost:5000/instructors')
       .then((res) => res.json())
       .then((data) => setInstructors(data))
       .catch((error) => console.log(error.message));

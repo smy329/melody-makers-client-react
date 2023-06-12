@@ -4,17 +4,6 @@
 
    - Create a payment history page for students. It will show the payment made by that student. Make sure to sort the payment history descending. The newest payment will be at the top
 
-## :writing_hand: **Bonus Task:**
-
-2. Create a readme for the client-side and write about your project.
-
-   - Website name or logo or both
-   - Minimum 5 points of your website features
-   - Used packages/ technology name
-   - Live site link
-
-3. Implementing a dark/light theme toggle for the home page. It's optional to implement the theme toggle for the entire website\.
-
 ## :writing_hand: **Optional Task:**
 
 1. (Highly Recommended) Add extra features you have learned so far, or you can explore new things. This will help you in the future to differentiate your project from others.

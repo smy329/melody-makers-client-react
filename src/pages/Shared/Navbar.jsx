@@ -54,7 +54,7 @@ const Navbar = () => {
         <div className="navbar-start flex items-center">
           <img src={logo} alt="logo" className="h-12 md:h-16 w-12 md:w-16" />
           <div className="hidden md:block">
-            <p className="font-bold text-xl ">Melody</p>
+            <p className="font-bold text-xl">Melody</p>
             <p className="font-bold text-xl">Makers</p>
           </div>
         </div>

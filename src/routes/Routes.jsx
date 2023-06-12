@@ -21,6 +21,7 @@ import AddClass from '../pages/Instructor/AddClass';
 import ManageClasses from '../pages/Admin/ManageClasses';
 import ManageUsers from '../pages/Admin/ManageUsers';
 import Error404 from '../pages/Error404';
+import TestPay from '../pages/Dashboard/TestPay';
 
 export const router = createBrowserRouter([
   {
@@ -76,6 +77,10 @@ export const router = createBrowserRouter([
       {
         path: 'make-payment',
         element: <MakePayment />,
+      },
+      {
+        path: 'test-pay',
+        element: <TestPay />,
       },
     ],
   },

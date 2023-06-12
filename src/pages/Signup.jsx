@@ -26,7 +26,7 @@ const Signup = () => {
           .then(() => {
             //const DbUserdata = {name: data.name, email: data.email, image: data.profileUrl}
             console.log('Updating profile with name & profile image url', loggedUser);
-            fetch('https://melody-makers-camp-server-smy329-gmailcom.vercel.app/users', {
+            fetch('http://localhost:5000/users', {
               method: 'POST',
               headers: {
                 'content-type': 'application/json',

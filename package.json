@@ -10,6 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^2.1.0",
+    "@stripe/stripe-js": "^1.54.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
     "@tanstack/react-query": "^4.29.12",
     "aos": "^2.3.4",
     "axios": "^1.4.0",
@@ -26,7 +31,8 @@
     "react-spinners": "^0.13.8",
     "react-tooltip": "^5.13.1",
     "sweetalert2": "^11.7.12",
-    "swiper": "^9.3.2"
+    "swiper": "^9.3.2",
+    "tailwindcss-dark-mode": "^1.1.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

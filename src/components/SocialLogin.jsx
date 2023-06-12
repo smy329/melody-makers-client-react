@@ -25,7 +25,7 @@ const SocialLogin = () => {
         enrolledClasses: [],
       };
       console.log(saveUser);
-      fetch('https://melody-makers-camp-server-smy329-gmailcom.vercel.app/users', {
+      fetch('http://localhost:5000/users', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
