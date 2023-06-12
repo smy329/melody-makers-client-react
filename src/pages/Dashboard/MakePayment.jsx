@@ -15,22 +15,17 @@ const MakePayment = () => {
   const [axiosSecure] = useAxiosSecure();
   const location = useLocation();
 
-  const { _id, price } = location?.state || {};
+  const { _id, price, className } = location?.state || {};
   const finalPrice = parseFloat(price.toFixed(2));
 
-  // const handleMakePayment = () => {
-  //   const enrolledClassData = { email: user.email, classId: _id };
-  //   axiosSecure.patch('/users/enrolled-classes', enrolledClassData).then((res) => {
-  //     console.log(res.data);
-  //   });
-  // };
   return (
     <div className="w-3/5 mx-auto my-auto">
-      <h1>{user?.email}</h1>
-      <p>{_id}</p>
-      <p>Price: ${finalPrice}</p>
+      <h1>Name: {user?.displayName}</h1>
+      <p>Class ID: {_id}</p>
+      <p>Class Name: {className}</p>
+      <p className="mb-8">Price: ${finalPrice}</p>
       <Elements stripe={stripePromise}>
-        <CheckoutForm price={finalPrice} _id={_id} />
+        <CheckoutForm price={finalPrice} _id={_id} className={className} />
       </Elements>
       {/* <button className="btn-theme" onClick={handleMakePayment}>
         Make Payment

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Stats = () => {
   return (
-    <div class="bg-[url('https://i.ibb.co/wsspwYT/bg2-Parallax.jpg')] bg-cover h-screen w-screen ">
+    <div className="bg-[url('https://i.ibb.co/wsspwYT/bg2-Parallax.jpg')] bg-cover h-screen w-screen ">
       <div className="">
         <div className="">
           <h1 className="text-white font-normal text-3xl md:text-5xl leading-6 tracking-wide text-center mb-5 md:mb-5 pt-16">
@@ -15,7 +15,7 @@ const Stats = () => {
           </p>
         </div>
         <div>
-          <div class="grid grid-cols-2 md:grid-cols-4 justify-between items-center m-8 md:m-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 justify-between items-center m-8 md:m-16">
             <div className="relative flex flex-col justify-center items-center">
               <motion.div
                 className="w-32 md:w-48 h-32 md:h-48 rounded-full border-2 border-white border-opacity-40 flex items-center justify-center"

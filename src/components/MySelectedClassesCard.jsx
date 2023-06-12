@@ -13,8 +13,7 @@ const MySelectedClassesCard = ({ singleClassFromDB, handleDelete }) => {
   const handlePayment = (_id) => {
     toast('Loading payment page');
     console.log(_id);
-    navigate('/users/make-payment', { state: { _id, price } });
-    //navigate('/users/test-pay', { state: { _id, price } });
+    navigate('/users/make-payment', { state: { _id, price, className } });
     //return <Navigate to="/users/make-payment" state={{ _id: _id }} />;
   };
 

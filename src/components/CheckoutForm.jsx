@@ -4,7 +4,7 @@ import useAxiosSecure from '../hooks/useAxiosSecure';
 import { AuthContext } from '../providers/AuthProvider';
 import { toast } from 'react-hot-toast';
 
-const CheckoutForm = ({ price, _id }) => {
+const CheckoutForm = ({ price, _id, className }) => {
   const { user } = useContext(AuthContext);
   const stripe = useStripe();
   const elements = useElements();
@@ -75,7 +75,7 @@ const CheckoutForm = ({ price, _id }) => {
       setTransactionId(paymentIntent.id);
 
       //store infoin the server
-      const paymentInfo = { email: user?.email, transactionId: paymentIntent?.id, price, classId: _id };
+      const paymentInfo = { email: user?.email, transactionId: paymentIntent?.id, price, classId: _id, className };
       axiosSecure.post('/users/payments', paymentInfo).then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {
