@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const axiosSecure = axios.create({
-  // baseURL: 'https://melody-makers-camp.web.app',
-  baseURL: 'https://melody-makers-camp.web.app',
+  // baseURL: 'https://melody-makers-camp-server-smy329-gmailcom.vercel.app',
+  baseURL: 'https://melody-makers-camp-server-smy329-gmailcom.vercel.app',
 });
 
 const useAxiosSecure = () => {

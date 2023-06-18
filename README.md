@@ -1,6 +1,6 @@
 ## Github Link: https://github.com/programming-hero-web-course1/b712-summer-camp-client-side-smy329
 
-## Live Website Link: https://melody-makers-camp.web.app
+## Live Website Link: https://melody-makers-camp.web.app/
 
 # Melody Makers Camp: Music School Website
 

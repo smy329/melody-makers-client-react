@@ -25,7 +25,7 @@ const SocialLogin = () => {
         enrolledClasses: [],
       };
       console.log(saveUser);
-      fetch('https://melody-makers-camp.web.app/users', {
+      fetch('https://melody-makers-camp-server-smy329-gmailcom.vercel.app/users', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
@@ -38,7 +38,7 @@ const SocialLogin = () => {
           if (data.insertedId) {
             toast.success('User account has been created successfully');
           }
-          navigate(from, { replace: true });
+          navigate(from, { replace: true } || '/');
         });
     });
   };

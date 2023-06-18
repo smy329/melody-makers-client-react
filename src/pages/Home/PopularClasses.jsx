@@ -2,25 +2,26 @@ import React, { useEffect, useState } from 'react';
 import PopularClassesCard from '../../components/PopularClassesCard';
 import { motion } from 'framer-motion';
 import Marquee from 'react-fast-marquee';
+import SectionHeader from '../../components/SectionHeader';
 
 const PopularClasses = () => {
   const [classes, setClasses] = useState([]);
   useEffect(() => {
-    fetch('https://melody-makers-camp.web.app/popular-classes')
+    fetch('https://melody-makers-camp-server-smy329-gmailcom.vercel.app/popular-classes')
       .then((res) => res.json())
       .then((data) => setClasses(data))
       .catch((error) => console.log(error.message));
   }, []);
   return (
-    <div className="conatiner mx-auto">
-      <div>
-        <h1 className="text-4xl md:text-7xl font-bold text-center mb-10">Popular Classes </h1>
+    <div className="bg-blue-50">
+      <div className="conatiner mx-auto p-5">
+        <SectionHeader title="Popular Classes" />
+        <Marquee pauseOnHover={true}>
+          {classes.map((singleClass) => (
+            <PopularClassesCard key={singleClass._id} singleClass={singleClass} />
+          ))}
+        </Marquee>
       </div>
-      <Marquee pauseOnHover={true}>
-        {classes.map((singleClass) => (
-          <PopularClassesCard key={singleClass._id} singleClass={singleClass} />
-        ))}
-      </Marquee>
     </div>
   );
 };
