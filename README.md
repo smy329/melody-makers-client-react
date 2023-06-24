@@ -86,3 +86,7 @@ Melody Makers Camp is a summer music school that offers a wide range of music cl
 Admin Panel:
 email: melody@makers.com
 password: yasir11@NEW
+
+Instructor:
+email:instructor@melody.com
+password: yasir11@NEW
